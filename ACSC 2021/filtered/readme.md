@@ -114,7 +114,7 @@ Non-debugging symbols:
 0x0000000000401408  _fini
 ```
 
-There is no `ALSR` in this challenge so it's over:
+There is no `PIE` in this challenge so it's over:
 
 ```python
 from pwn import *
