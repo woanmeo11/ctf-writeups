@@ -71,7 +71,7 @@ Focus on `gmpy2.next_prime()` function, I realize that it's not a randomize func
 e = [65537, 65539, 65543]
 ```
 
-Now we have with 3 `stream` and 3 public exponent `e`, just crack it and capture the flag, ez :>
+Now we have 3 `stream` and 3 public exponent `e`, just crack it and capture the flag, ez :>
 
 ### Cracking RSA
 
