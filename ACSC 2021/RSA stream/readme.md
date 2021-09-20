@@ -44,7 +44,7 @@ Flag is encrypted to `stream` with RSA 2048bit and then XORed gradually with eac
 ## Solution
 
 ### Getting our RSA back
-At first, getting our `stream` back by XORing `chal.py` with `chal.enc` for each 256 bytes.
+At first, get our `stream` back by XORing `chal.py` with `chal.enc` for each 256 bytes.
 
 ```python
 with open('chal.enc', 'rb') as r:
