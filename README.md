@@ -1,2 +1,2 @@
 # ctf-writeups
-just my ctf writeups xd
+just my ctf writeups xD
