@@ -49,7 +49,7 @@ This is a great challenge. I'm so lucky to get firstblood on it xD.
 
 * In `get_flag` function, there is a check if value of `admin` is `True` we get the flag. In order to pass this check, we must craft a new token which contains `{'admin': True}`.
 
-To forge the token, we must have private key. But how? Private key can be recovered from weak public key. From `get_token` function, we can receive two more different tokens. From these tokens, we can recover the public modulus `N` using some RSA knowledges.
+To forge the token, we must have private key. But how? Private key can be recovered from weak public key. From `get_token` function, we can receive two more different tokens. From these tokens, we can recover the public modulus `N` using some RSA knowledge.
 
 ## Solution
 
@@ -63,7 +63,7 @@ jwt0 = requests.get(url + '/get_token').text
 jwt1 = requests.get(url + '/get_token').text
 ```
 
-To find `N` we want to calculate `g = gcd(magic0, magic1)` with magic being `pow(signature, e) - msg` for each of the tokens. This process can take a few minutes.
+To find `N` we want to calculate `g = gcd(magic0, magic1)` with `magic` being `pow(signature, e) - msg` for each of the tokens. This process can take a few minutes.
 
 ```python
 def pkcs1_v1_5_encode(msg: bytes, n_len: int):
