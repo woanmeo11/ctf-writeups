@@ -101,7 +101,7 @@ Sau một hồi loay hoay thì mình nhận được password của `admin` chí
 
 ### Diging into database
 
-Có vẻ như dòng chữ `Xin chào admin.` kia là nơi trả về kết quả của đoạn query hồi nãy. Thử query `version()` thì mình nhận được:
+Có vẻ như dòng chữ `Xin chào admin.` ở trên kia là nơi trả về kết quả của đoạn query hồi nãy. Thử query `version()` thì mình nhận được:
 
 ```sql
 union select version()#
@@ -206,4 +206,4 @@ Flag:
 CTF{pleAs3_doNt_r3invent_th3_whe3L}
 ```
 
-That's end. Hy vọng bạn thích bài viết này của mình :]]
+That's end. Hy vọng bạn thích bài viết này của mình <3
