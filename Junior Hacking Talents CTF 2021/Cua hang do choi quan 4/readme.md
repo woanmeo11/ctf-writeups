@@ -95,7 +95,7 @@ Vì không thấy flag nên mình đoán là flag sẽ là password của `admin
 
 > Chả hiểu sao khúc này mình lại đi brutefỏce trong khi có thể dùng `union select` =))
 
-Sau một hồi loay hoay thì mình nhận được password của `admin` chính là `admin` và vẫn chưa thấy flag :>
+Sau một hồi loay hoay thì mình nhận được password của `admin` chính là `admin` và vẫn chưa thấy flag. Tuyệt :>
 
 ![dog](./images/dog.jpg)
 
