@@ -99,7 +99,7 @@ Sau một hồi loay hoay thì mình nhận được password của `admin` chí
 
 ![dog](./images/dog.jpg)
 
-### Diging into database
+### Digging into database
 
 Có vẻ như dòng chữ `Xin chào admin.` ở trên kia là nơi trả về kết quả của đoạn query hồi nãy. Thử query `version()` thì mình nhận được:
 
