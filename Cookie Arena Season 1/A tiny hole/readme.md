@@ -69,7 +69,7 @@ cat: /flag.txt: No such file or directory
 
 Nhưng không có internet thì làm sao mà gửi flag về? Với những chall kiểu như này mình sẽ thử dùng DNS để bypass.
 
-Mình sử dụng lệnh `dig` để query và [requestrepo.com](requestrepo.com) để hứng DNS.
+Mình sử dụng lệnh `dig` để query và [requestrepo.com](https://requestrepo.com) để hứng DNS.
 
 Và đây là payload của mình:
 
