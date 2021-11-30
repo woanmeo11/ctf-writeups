@@ -18,7 +18,7 @@ Mình tải source về build lại, xoá đoạn check phía trên đi và th�
 1 union select 1,make_set(1|4,`2`,`3`,`4`)from(select 1,2,3,4 union select * from users)a
 ```
 
-Do không tìm được tên cột nên mình sử dụng `select 1,2,3,4 union select * from users` để tạo table mới từ table users với các cột có tên là `1`, `2`, `3` và `4` sau đó dùng `make_set` để ghép các cột lại với nhau thành 1 cột duy nhất.
+Do không tìm được tên cột nên mình sử dụng `select 1,2,3,4 union select * from users` để tạo table mới từ table `users` với các cột có tên là `1`, `2`, `3` và `4` sau đó dùng `make_set` để ghép các cột lại với nhau thành 1 cột duy nhất.
 
 Phần SQLi đã xong, việc còn lại cần làm là bypass SSRF.
 
