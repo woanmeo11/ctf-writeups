@@ -42,7 +42,7 @@ function filter($url) {
 
 Nếu hostname mình nhập vào có ip mà khác `127.0.0.1` và `0.0.0.0` thì `curl` sẽ được thực hiện. Lúc này mình cần 1 url có ip khác `127.0.0.1` để `curl` được thực hiện và có `REMOTE_ADDR` = `127.0.0.1` để SQLi được.
 
-Ý tưởng của mình là sử dụng DNS Rebinding, tạo 1 url mà khi query đến nó sẽ ngẫu nhiên trỏ đến `127.0.0.1` hoặc một ip nào đó. Ở đây mình dùng [requestrepo.com](requestrepo.com) và config như sau:
+Ý tưởng của mình là sử dụng DNS Rebinding, tạo 1 url mà khi query đến nó sẽ ngẫu nhiên trỏ đến `127.0.0.1` hoặc một ip nào đó. Ở đây mình dùng [requestrepo.com](https://requestrepo.com) và config như sau:
 
 ![requestrepo_config](images/requestrepo_config.png)
 
