@@ -69,7 +69,7 @@ app.run('localhost', 1234)
 
 Đoạn code trên sẽ xoay vòng trả về `bruh` hoặc chuyển hướng đến `http://localhost:1337/flag`.
 
-Tiếp theo là chạy file `backend.py` và dùng `ngrok` để public lên internet:
+Tiếp theo mình chạy file `backend.py` và dùng `ngrok` để public lên internet:
 
 ```console
 $ ngrok http localhost:1234
@@ -88,7 +88,7 @@ Connections                   ttl     opn     rt1     rt5     p50     p90
                               0       0       0.00    0.00    0.00    0.00
 ```
 
-Cuối cùng, dùng URL mình nhận được từ `ngrok` và exploit thôi xD
+Cuối cùng, dùng URL mình nhận được từ `ngrok` để exploit thôi xD
 
 ![exploit](images/exploit.png)
 
