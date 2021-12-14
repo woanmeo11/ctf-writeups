@@ -4,7 +4,7 @@ Mình vẫn chưa solve được bài này tại giải do có một ít bruh ._
 
 ## Hmmmmmm
 
-Sau khi nghiên cứu source thì ai cũng biết flag được giấu ở đây :)). Để lấy được flag thì mình phải request đến `/flag` bằng một địa chỉ local.
+Sau khi nghiên cứu source thì ai cũng biết flag được giấu ở đây :)) Để lấy được flag thì mình phải request đến `/flag` bằng một địa chỉ local.
 
 ```js
 app.get('/flag', (req, res) => {
