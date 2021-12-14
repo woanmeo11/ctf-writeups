@@ -45,7 +45,7 @@ DNS Rebinding ở các bài viết trước của mình:
 
 ## Do it
 
-Đây là một đoạn code mình dựa trên ý tưởng vừa rồi, `backend.py`:
+Đây là đoạn code mình nặn ra dựa trên ý tưởng vừa rồi, `backend.py`:
 
 ```python
 from flask import Flask, redirect
