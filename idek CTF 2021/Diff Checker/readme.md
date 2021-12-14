@@ -1,6 +1,6 @@
 # Diff Checker
 
-Mình vẫn chưa solve được bài tại giải này do có một ít bruh .__. Bài này sử dụng một kĩ thuật khá hay giống với thứ mình mới học gần đây nên mình viết write up để lưu lại :>
+Mình vẫn chưa solve được bài này tại giải do có một ít bruh .__. Bài này sử dụng một kĩ thuật khá hay giống với thứ mình mới học gần đây nên mình viết write up để lưu lại :>
 
 ## Hmmmmmm
 
