@@ -46,7 +46,7 @@ Nếu hostname mình nhập vào có ip mà khác `127.0.0.1` và `0.0.0.0` thì
 
 ![requestrepo_config](images/requestrepo_config.png)
 
-Do nó sẽ trỏ ngẫu nhiên mà mình cần lần đầu tiên khi check `index.php` ip là `1.2.3.4` và lần sau tại `home.php` là `127.0.0.1`. Do đó cần request nhiều lần để thấy được flag.
+Mình config dùng dấu `%` như trên thì url sẽ trỏ ngẫu nhiên ra một trong hai ip mình chỉ định, mà mình cần lần đầu tiên khi check `index.php` ip là `1.2.3.4` và lần sau tại `home.php` là `127.0.0.1`. Do đó cần request nhiều lần để thấy được flag.
 
 Payload:
 
