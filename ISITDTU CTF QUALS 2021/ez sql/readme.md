@@ -40,13 +40,13 @@ function filter($url) {
 }
 ```
 
-Nếu hostname mình nhập vào có ip mà khác `127.0.0.1` và `0.0.0.0` thì `curl` sẽ được thực hiện. Lúc này mình cần 1 url có ip khác `127.0.0.1` để `curl` được thực hiện và có `REMOTE_ADDR` = `127.0.0.1` để SQLi được.
+Nếu url mình nhập vào có ip mà khác `127.0.0.1` và `0.0.0.0` thì `curl` sẽ được thực hiện. Lúc này mình cần một url có ip khác `127.0.0.1` để `curl` được thực hiện, nhưng để SQLi được thì url lại phải có `REMOTE_ADDR` hay ip = `127.0.0.1` ???
 
 Ý tưởng của mình là sử dụng DNS Rebinding, tạo 1 url mà khi query đến nó sẽ ngẫu nhiên trỏ đến `127.0.0.1` hoặc một ip nào đó. Ở đây mình dùng [requestrepo.com](https://requestrepo.com) và config như sau:
 
 ![requestrepo_config](images/requestrepo_config.png)
 
-Mình config dùng dấu `%` như trên thì url sẽ trỏ ngẫu nhiên ra một trong hai ip mình chỉ định, mà mình cần lần đầu tiên khi check `index.php` ip là `1.2.3.4` và lần sau tại `home.php` là `127.0.0.1`. Do đó cần request nhiều lần để thấy được flag.
+Mình config dùng dấu `%` như trên thì url sẽ trỏ ngẫu nhiên ra một trong hai ip mình chỉ định, mà mình cần lần đầu tiên khi check `index.php` thì ip sẽ là `1.2.3.4` và lần sau tại `home.php` thì ip sẽ là `127.0.0.1`. Do đó cần request nhiều lần để thấy được flag.
 
 Payload:
 
